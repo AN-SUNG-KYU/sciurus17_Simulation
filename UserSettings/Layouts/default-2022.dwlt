@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1440
     height: 810
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 91
+  controlID: 88
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -335,14 +335,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\UnityProjects\Sciurus17_Simulation
+  m_LastProjectPath: "C:\\Users\\samsung\\OneDrive\\\uBB38\uC11C\\GitHub\\sciurus17_Simulation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be690000
-    m_LastClickedID: 27070
-    m_ExpandedIDs: 00000000bc69000000ca9a3b
+    m_SelectedIDs: b2060000
+    m_LastClickedID: 1714
+    m_ExpandedIDs: 000000000a06000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -370,7 +370,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -514,7 +514,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffff
+      m_ExpandedIDs: 38a6feff06a7feffc0a7feffa0a8feffbaaafeff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -882,9 +882,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.270241, y: 3.9524555, z: 0.73186255}
+    m_Target: {x: -17.769363, y: 1.5081556, z: 1.8417642}
     speed: 2
-    m_Value: {x: -15.270241, y: 3.9524555, z: 0.73186255}
+    m_Value: {x: -17.769363, y: 1.5081556, z: 1.8417642}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -934,9 +934,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.13620374, y: 0.6804899, z: -0.13091348, w: -0.7079857}
   m_Size:
-    m_Target: 9.796889
+    m_Target: 13.842021
     speed: 2
-    m_Value: 9.796889
+    m_Value: 13.842021
   m_Ortho:
     m_Target: 0
     speed: 2
