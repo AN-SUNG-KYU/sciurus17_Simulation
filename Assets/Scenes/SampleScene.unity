@@ -275,7 +275,7 @@ MonoBehaviour:
   moveSpeed: 8
   lookSpeed: 2
   zoomSpeed: 3
-  panSpeed: 10
+  panSpeed: 50
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
