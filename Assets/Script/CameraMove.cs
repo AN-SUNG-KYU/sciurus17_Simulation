@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public float moveSpeed = 10f;    // Ä«¸Ş¶ó ÀÌµ¿ ¼Óµµ
-    public float lookSpeed = 2f;     // Ä«¸Ş¶ó È¸Àü ¼Óµµ
-    public float zoomSpeed = 10f;    // Ä«¸Ş¶ó ÁÜ ¼Óµµ
-    public float panSpeed = 10f;     // Æò¸é ÀÌµ¿ ¼Óµµ
+    public float moveSpeed= 10f;    // Ä«¸Ş¶EÀÌµ¿ ¼Óµµ
+    public float lookSpeed = 2f;     // Ä«¸Ş¶EÈ¸ÀE¼Óµµ
+    public float zoomSpeed = 10f;    // Ä«¸Ş¶EÁÜ ¼Óµµ
+    public float panSpeed = 10f;     // Æò¸EÀÌµ¿ ¼Óµµ
 
-    private float yaw = 0f;          // ¸¶¿ì½º ÁÂ¿ì È¸Àü
-    private float pitch = 0f;        // ¸¶¿ì½º »óÇÏ È¸Àü
+    private float yaw = 0f;          // ¸¶¿Eº ÁÂ¿EÈ¸ÀE
+    private float pitch = 0f;        // ¸¶¿Eº »óÇÏ È¸ÀE
 
     void Update()
     {
-        // Ä«¸Ş¶ó ÀÌµ¿ (WASD Å°)
+        // Ä«¸Ş¶EÀÌµ¿ (WASD Å°)
         float moveForward = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         float moveRight = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float moveUp = 0f;
@@ -22,22 +22,22 @@ public class CameraMove : MonoBehaviour
         Vector3 move = transform.forward * moveForward + transform.right * moveRight + transform.up * moveUp;
         transform.position += move;
 
-        // ¸¶¿ì½º·Î Ä«¸Ş¶ó È¸Àü
-        if (Input.GetMouseButton(0)) // ¿À¸¥ÂÊ ¸¶¿ì½º ¹öÆ°À» ´­·¶À» ¶§ È¸Àü
+        // ¸¶¿Eº·Î Ä«¸Ş¶EÈ¸ÀE
+        if (Input.GetMouseButton(0)) // ¿À¸¥ÂÊ ¸¶¿Eº ¹öÆ°À» ´­·¶À» ¶§ È¸ÀE
         {
             yaw += lookSpeed * Input.GetAxis("Mouse X");
             pitch -= lookSpeed * Input.GetAxis("Mouse Y");
-            pitch = Mathf.Clamp(pitch, -90f, 90f);  // »óÇÏ È¸Àü °¢µµ Á¦ÇÑ
+            pitch = Mathf.Clamp(pitch, -90f, 90f);  // »óÇÏ È¸ÀE°¢µµ Á¦ÇÑ
 
             transform.eulerAngles = new Vector3(pitch, yaw, 0f);
         }
 
-        // ¸¶¿ì½º ½ºÅ©·Ñ·Î ÁÜ ÀÎ/ÁÜ ¾Æ¿ô
+        // ¸¶¿Eº ½ºÅ©·Ñ·Î ÁÜ ÀÎ/ÁÜ ¾Æ¿E
         float scroll = Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
         transform.position += transform.forward * scroll;
 
-        // °¡¿îµ¥ ¸¶¿ì½º ¹öÆ°À¸·Î Æò¸é ÀÌµ¿
-        if (Input.GetMouseButton(2)) // °¡¿îµ¥ ¸¶¿ì½º ¹öÆ°À» ´­·¶À» ¶§ Æò¸é ÀÌµ¿
+        // °¡¿ûÑ¥ ¸¶¿Eº ¹öÆ°À¸·Î Æò¸EÀÌµ¿
+        if (Input.GetMouseButton(2)) // °¡¿ûÑ¥ ¸¶¿Eº ¹öÆ°À» ´­·¶À» ¶§ Æò¸EÀÌµ¿
         {
             float panX = -Input.GetAxis("Mouse X") * panSpeed * Time.deltaTime;
             float panY = -Input.GetAxis("Mouse Y") * panSpeed * Time.deltaTime;
